@@ -474,15 +474,16 @@ function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <button
-                  className={`w-full py-2.5 text-sm font-medium transition-all ${
+                <a
+                  href="#contact"
+                  className={`block w-full py-2.5 text-sm font-medium text-center transition-all ${
                     plan.highlight
                       ? "bg-[#4f46e5] text-white hover:bg-[#4338ca]"
                       : "border border-[#d4d4d4] text-[#444] hover:border-[#111] hover:text-[#111]"
                   }`}
                 >
                   {price === "Custom" ? "Contact Sales" : "Start Free Trial"}
-                </button>
+                </a>
               </div>
             );
           })}
